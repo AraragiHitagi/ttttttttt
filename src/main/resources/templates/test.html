@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        h2{
+            text-decoration: underline;
+            font-size:0.9em;
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="showing">
+    <div th:replace="include/include::footer1" ></div>
+    <div th:replace="include/include::footer2(2015,2018)" ></div>
+</div>
+
+</body>
+
+</html>
